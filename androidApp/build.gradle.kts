@@ -10,6 +10,10 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation(project(":shared"))
+                implementation(platform("io.insert-koin:koin-bom:+"))
+                implementation("io.insert-koin:koin-core")
+                implementation("io.insert-koin:koin-android:+")
+                implementation("io.insert-koin:koin-androidx-compose:+")
             }
         }
     }
