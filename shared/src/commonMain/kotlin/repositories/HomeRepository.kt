@@ -31,7 +31,7 @@ class HomeRepository {
         imagesStorage.value.removeAt(0)
     }
 
-    fun getImages(): MutableList<String> {
-        return imagesStorage.value
+    fun getImages(): MutableStateFlow<MutableList<String>> {
+        return imagesStorage
     }
 }
